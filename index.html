@@ -713,7 +713,14 @@
     align-items: center;
     gap: 0.5rem;
     color: var(--ink-soft);
-    opacity: 0.55;
+    text-decoration: none;
+    transition: color .2s ease, border-color .2s ease;
+  }
+  .social-item:hover {
+    color: var(--copper);
+  }
+  .social-item:hover .icon-circle {
+    border-color: var(--copper);
   }
   .social-item .icon-circle {
     width: 2.6rem;
@@ -849,13 +856,13 @@
         <p>نماذج فعلية من تطبيقات وأنظمة صممناها وطورناها ونشرناها للعملاء.</p>
       </div>
       <div class="works-grid">
-        <button type="button" class="work-card reveal" data-work="motivito" aria-haspopup="dialog">
+        <button type="button" class="work-card reveal" data-work="mohamah" aria-haspopup="dialog">
           <div class="work-card-head">
-            <span class="work-logo"><img src="works/motivito/logo.png" alt="شعار موتيفيتو" loading="lazy"></span>
-            <h3>موتيفيتو</h3>
+            <span class="work-logo" role="img" aria-label="شعار محاماة">⚖️</span>
+            <h3>محاماة</h3>
           </div>
-          <p>تطبيق تجاري تم نشره على قوقل بلاي وآب ستور، يخدم الآباء في تنظيم مهام أطفالهم بوضع المهام على شكل تحديات تُكسب الطفل رغبة للاستمرار في السلوك الجيد. بالإضافة إلى طريقة تسمح بإضافة الجوائز وتخصيصها لكل طفل بأريحية، يدعم ذلك نظام نقاط وتجربة استخدام ممتعة.</p>
-          <span class="work-cta">شاهد لقطات من التطبيق ←</span>
+          <p>منصة إلكترونية متكاملة لمكاتب المحاماة والاستشارات القانونية، تجمع كل عمليات المكتب في واجهة واحدة. يتابع كل محامٍ وموظف مهامه وقضاياه أولاً بأول، بينما يحصل الشريك أو المدير على رؤية شاملة لأداء الفريق كاملاً عبر لوحة تحكم بإحصائيات فورية: القضايا، المهام، الجلسات، الوكالات، العقود، طلبات التنفيذ، والاستشارات، مع إدارة تفصيلية لكل مشروع قانوني بأقسامه الفرعية من القضايا والأحكام إلى الأرشيف.</p>
+          <span class="work-cta">شاهد لقطات من المنصة ←</span>
         </button>
         <button type="button" class="work-card reveal" data-work="wodooh" aria-haspopup="dialog">
           <div class="work-card-head">
@@ -865,13 +872,13 @@
           <p>المنصة الأولى في سوق النظارات المدعومة بالذكاء الاصطناعي. يرفع المريض وصفته الطبية داخل الموقع، وبعد تحليل ذكي تُرشَّح له العدسة المناسبة، ثم يجرّب الإطار بتقنية الواقع المعزز قبل إتمام الطلب، في تجربة رقمية متكاملة من الباب إلى الباب.</p>
           <span class="work-cta">شاهد لقطات من المنصة ←</span>
         </button>
-        <button type="button" class="work-card reveal" data-work="mohamah" aria-haspopup="dialog">
+        <button type="button" class="work-card reveal" data-work="motivito" aria-haspopup="dialog">
           <div class="work-card-head">
-            <span class="work-logo" role="img" aria-label="شعار محاماة">⚖️</span>
-            <h3>محاماة</h3>
+            <span class="work-logo"><img src="works/motivito/logo.png" alt="شعار موتيفيتو" loading="lazy"></span>
+            <h3>موتيفيتو</h3>
           </div>
-          <p>منصة إلكترونية متكاملة لمكاتب المحاماة والاستشارات القانونية، تجمع كل عمليات المكتب في واجهة واحدة. يتابع كل محامٍ وموظف مهامه وقضاياه أولاً بأول، بينما يحصل الشريك أو المدير على رؤية شاملة لأداء الفريق كاملاً عبر لوحة تحكم بإحصائيات فورية: القضايا، المهام، الجلسات، الوكالات، العقود، طلبات التنفيذ، والاستشارات، مع إدارة تفصيلية لكل مشروع قانوني بأقسامه الفرعية من القضايا والأحكام إلى الأرشيف.</p>
-          <span class="work-cta">شاهد لقطات من المنصة ←</span>
+          <p>تطبيق تجاري تم نشره على قوقل بلاي وآب ستور، يخدم الآباء في تنظيم مهام أطفالهم بوضع المهام على شكل تحديات تُكسب الطفل رغبة للاستمرار في السلوك الجيد. بالإضافة إلى طريقة تسمح بإضافة الجوائز وتخصيصها لكل طفل بأريحية، يدعم ذلك نظام نقاط وتجربة استخدام ممتعة.</p>
+          <span class="work-cta">شاهد لقطات من التطبيق ←</span>
         </button>
       </div>
     </div>
@@ -996,12 +1003,12 @@
         <a class="btn btn-primary email-btn" href="mailto:sales@codengtech.com">الايميل الرسمي</a>
 
         <div class="social-row">
-          <div class="social-item" title="قريباً">
+          <a class="social-item" href="https://www.tiktok.com/@codengtech" target="_blank" rel="noopener">
             <div class="icon-circle">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82c-.98-.94-1.6-2.15-1.72-3.5h-3.14v14.02c0 1.6-1.3 2.9-2.9 2.9a2.9 2.9 0 1 1 0-5.8c.28 0 .55.04.8.11V10.3a6.13 6.13 0 0 0-.8-.05c-3.4 0-6.16 2.76-6.16 6.16S5.24 22.57 8.64 22.57s6.16-2.76 6.16-6.16V9.03a8.9 8.9 0 0 0 5.06 1.57V7.46a5.4 5.4 0 0 1-3.26-1.64Z"/></svg>
             </div>
-            <span>TIKTOK · قريباً</span>
-          </div>
+            <span>@codengtech</span>
+          </a>
         </div>
       </div>
     </div>
@@ -1011,6 +1018,8 @@
     <div class="container footer-row">
       <span class="brand-sm">CodEng Tech</span>
       <span>بالحرفية نصنع، وبالتقنية نبني.</span>
+      <a href="mailto:sales@codengtech.com" style="color:inherit;">sales@codengtech.com</a>
+      <a href="https://wa.me/966507660168" target="_blank" rel="noopener" style="color:inherit;" dir="ltr">+966 50 766 0168</a>
       <span>© 2026 جميع الحقوق محفوظة</span>
     </div>
   </footer>
